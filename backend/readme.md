@@ -29,7 +29,7 @@ A robust and scalable backend API for managing personal and shared expenses, wit
   - Mongoose (ODM)
   - Bcrypt (password hashing)
   - Multer (file uploads)
-  - Helmet (security)
+  - Helmet (SEO)
   - Morgan (logging)
 
 ## API Endpoints
@@ -73,3 +73,29 @@ A robust and scalable backend API for managing personal and shared expenses, wit
 ### Installation Steps
 
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/expense-tracker-api.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd expense-tracker-api
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Create a `.env` file in the root directory and add the following environment variables:
+   ```env
+   PORT=3000
+   MONGODB_URI=mongodb://localhost:27017/expense-tracker
+   JWT_SECRET=your_jwt_secret
+   JWT_EXPIRES_IN=1d
+   REDIS_URL=redis://localhost:6379
+   CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+   CLOUDINARY_API_KEY=your_cloudinary_api_key
+   CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+   ```
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
